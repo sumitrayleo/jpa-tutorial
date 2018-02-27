@@ -14,7 +14,7 @@ public class UserDaoServiceImpl implements UserDAOService {
 
     @PersistenceContext
     private EntityManager manager;
-    
+
     @Override
     public User insert(User user) {
         manager.persist(user);

@@ -9,13 +9,13 @@ import org.springframework.stereotype.Component;
 import com.tutorial.jpa.jpa10steps.entity.User;
 
 @Component
-public class UserDAOCommandLineRunner implements CommandLineRunner{
+public class UserDAOCommandLineRunner implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(UserDAOCommandLineRunner.class);
-    
+
     @Autowired
     private UserDAOService userDAOService;
-    
+
     @Override
     public void run(String... args) throws Exception {
         User user = new User("Jack", "admin");
